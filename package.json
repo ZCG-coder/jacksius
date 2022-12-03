@@ -2,6 +2,7 @@
   "name": "jacksius",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ZCG-Coder.github.io/jacksius",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,10 +21,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --openssl-legacy-provider",
-    "build": "react-scripts build --openssl-legacy-provider",
-    "test": "react-scripts test --openssl-legacy-provider",
-    "eject": "react-scripts eject --openssl-legacy-provider"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.14"
+    "@types/jquery": "^3.5.14",
+    "gh-pages": "^4.0.0"
   }
 }
