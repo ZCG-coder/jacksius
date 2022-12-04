@@ -11,7 +11,7 @@ export class Jacksius extends React.Component<any, any> {
     private temperature: string = "";
 
     onResize() {
-        $("#temperature").css({"font-size": `${($(window).height() || 100) / 3}px`});
+        $("#temperature").css({"font-size": `${($(window).width() || 100) / 3}px`});
     }
 
     render() {
@@ -31,7 +31,7 @@ export class Jacksius extends React.Component<any, any> {
                 this.onResize();
             }
         };
-        xmlHttp.open("GET", "https://cors-anywhere.herokuapp.com/https://pst.klgrth.io/paste/ystsq/download", true); // true for asynchronous
+        xmlHttp.open("GET", "https://bnm0fq-8000.preview.csb.app/https://pst.klgrth.io/paste/ystsq/download", true); // true for asynchronous
         xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "https://pst.klgrth.io");
         xmlHttp.setRequestHeader("Vary", "Origin")
         xmlHttp.send(null);
